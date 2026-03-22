@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "question": "Which data structure follows LIFO order?",
+    "options": ["Queue", "Stack", "Array", "Linked List"],
+    "correct": "Stack",
+    "subject": "Data Structures",
+    "year": 2023,
+    "frequency": 5
+  },
+  {
+    "id": 2,
+    "question": "Which data structure follows FIFO order?",
+    "options": ["Stack", "Tree", "Queue", "Graph"],
+    "correct": "Queue",
+    "subject": "Data Structures",
+    "year": 2022,
+    "frequency": 4
+  },
+  {
+    "id": 3,
+    "question": "What is the time complexity of binary search?",
+    "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
+    "correct": "O(log n)",
+    "subject": "Data Structures",
+    "year": 2023,
+    "frequency": 3
+  },
+  {
+    "id": 4,
+    "question": "Which traversal visits root node first?",
+    "options": ["Inorder", "Postorder", "Preorder", "Level order"],
+    "correct": "Preorder",
+    "subject": "Data Structures",
+    "year": 2022,
+    "frequency": 2
+  },
+  {
+    "id": 5,
+    "question": "What does CPU stand for?",
+    "options": ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Core Processing Unit"],
+    "correct": "Central Processing Unit",
+    "subject": "Computer Fundamentals",
+    "year": 2022,
+    "frequency": 3
+  },
+  {
+    "id": 6,
+    "question": "Which memory is fastest?",
+    "options": ["RAM", "Hard Disk", "Cache", "ROM"],
+    "correct": "Cache",
+    "subject": "Computer Fundamentals",
+    "year": 2023,
+    "frequency": 4
+  },
+  {
+    "id": 7,
+    "question": "Full form of ALU?",
+    "options": ["Arithmetic Logic Unit", "Array Logic Unit", "Arithmetic Linear Unit", "None"],
+    "correct": "Arithmetic Logic Unit",
+    "subject": "Computer Fundamentals",
+    "year": 2021,
+    "frequency": 2
+  },
+  {
+    "id": 8,
+    "question": "Which gate outputs 1 only when all inputs are 1?",
+    "options": ["OR", "NOT", "AND", "XOR"],
+    "correct": "AND",
+    "subject": "Digital Electronics",
+    "year": 2023,
+    "frequency": 4
+  },
+  {
+    "id": 9,
+    "question": "Which gate outputs 1 when any input is 1?",
+    "options": ["AND", "NOT", "NAND", "OR"],
+    "correct": "OR",
+    "subject": "Digital Electronics",
+    "year": 2022,
+    "frequency": 3
+  },
+  {
+    "id": 10,
+    "question": "What is the complement of 1 in binary?",
+    "options": ["1", "0", "2", "None"],
+    "correct": "0",
+    "subject": "Digital Electronics",
+    "year": 2021,
+    "frequency": 3
+  },
+  {
+    "id": 11,
+    "question": "XOR gate outputs 1 when inputs are?",
+    "options": ["Same", "Different", "Both 0", "Both 1"],
+    "correct": "Different",
+    "subject": "Digital Electronics",
+    "year": 2023,
+    "frequency": 2
+  }
+]
