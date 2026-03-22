@@ -1,142 +1,252 @@
 [
   {
-    "id": 1,
-    "question": "Which data structure follows LIFO order?",
+    "id": 1, "question": "Which data structure follows LIFO order?",
     "options": ["Queue", "Stack", "Array", "Linked List"],
-    "correct": "Stack",
-    "subject": "Data Structures",
-    "year": 2023,
-    "frequency": 5,
-    "difficulty": "easy"
+    "correct": "Stack", "subject": "Data Structures", "year": 2023, "frequency": 5, "difficulty": "easy"
   },
   {
-    "id": 2,
-    "question": "Which data structure follows FIFO order?",
+    "id": 2, "question": "Which data structure follows FIFO order?",
     "options": ["Stack", "Tree", "Queue", "Graph"],
-    "correct": "Queue",
-    "subject": "Data Structures",
-    "year": 2022,
-    "frequency": 4,
-    "difficulty": "easy"
+    "correct": "Queue", "subject": "Data Structures", "year": 2022, "frequency": 4, "difficulty": "easy"
   },
   {
-    "id": 3,
-    "question": "What is the time complexity of binary search?",
+    "id": 3, "question": "What is the time complexity of binary search?",
     "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
-    "correct": "O(log n)",
-    "subject": "Data Structures",
-    "year": 2023,
-    "frequency": 3,
-    "difficulty": "medium"
+    "correct": "O(log n)", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "medium"
   },
   {
-    "id": 4,
-    "question": "Which traversal visits root node first?",
+    "id": 4, "question": "Which traversal visits root node first?",
     "options": ["Inorder", "Postorder", "Preorder", "Level order"],
-    "correct": "Preorder",
-    "subject": "Data Structures",
-    "year": 2022,
-    "frequency": 2,
-    "difficulty": "medium"
+    "correct": "Preorder", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "medium"
   },
   {
-    "id": 5,
-    "question": "What is the worst case time complexity of quicksort?",
+    "id": 5, "question": "What is the worst case time complexity of quicksort?",
     "options": ["O(n log n)", "O(n)", "O(n²)", "O(log n)"],
-    "correct": "O(n²)",
-    "subject": "Data Structures",
-    "year": 2023,
-    "frequency": 3,
-    "difficulty": "hard"
+    "correct": "O(n²)", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "hard"
   },
   {
-    "id": 6,
-    "question": "What does CPU stand for?",
+    "id": 6, "question": "Which data structure is used for function call management?",
+    "options": ["Queue", "Stack", "Array", "Tree"],
+    "correct": "Stack", "subject": "Data Structures", "year": 2021, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 7, "question": "A binary tree with n nodes has how many null pointers?",
+    "options": ["n", "n-1", "n+1", "2n"],
+    "correct": "n+1", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "hard"
+  },
+  {
+    "id": 8, "question": "Which sorting algorithm has best average case complexity?",
+    "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+    "correct": "Merge Sort", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 9, "question": "In a stack, which operation removes the top element?",
+    "options": ["Push", "Peek", "Pop", "Insert"],
+    "correct": "Pop", "subject": "Data Structures", "year": 2021, "frequency": 4, "difficulty": "easy"
+  },
+  {
+    "id": 10, "question": "Which tree has all leaves at the same level?",
+    "options": ["Binary Tree", "BST", "Complete Binary Tree", "Full Binary Tree"],
+    "correct": "Complete Binary Tree", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "hard"
+  },
+  {
+    "id": 11, "question": "What does CPU stand for?",
     "options": ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Core Processing Unit"],
-    "correct": "Central Processing Unit",
-    "subject": "Computer Fundamentals",
-    "year": 2022,
-    "frequency": 3,
-    "difficulty": "easy"
+    "correct": "Central Processing Unit", "subject": "Computer Fundamentals", "year": 2022, "frequency": 3, "difficulty": "easy"
   },
   {
-    "id": 7,
-    "question": "Which memory is fastest?",
+    "id": 12, "question": "Which memory is fastest?",
     "options": ["RAM", "Hard Disk", "Cache", "ROM"],
-    "correct": "Cache",
-    "subject": "Computer Fundamentals",
-    "year": 2023,
-    "frequency": 4,
-    "difficulty": "easy"
+    "correct": "Cache", "subject": "Computer Fundamentals", "year": 2023, "frequency": 4, "difficulty": "easy"
   },
   {
-    "id": 8,
-    "question": "Full form of ALU?",
+    "id": 13, "question": "Full form of ALU?",
     "options": ["Arithmetic Logic Unit", "Array Logic Unit", "Arithmetic Linear Unit", "None"],
-    "correct": "Arithmetic Logic Unit",
-    "subject": "Computer Fundamentals",
-    "year": 2021,
-    "frequency": 2,
-    "difficulty": "medium"
+    "correct": "Arithmetic Logic Unit", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "easy"
   },
   {
-    "id": 9,
-    "question": "Which of the following is NOT a type of operating system?",
+    "id": 14, "question": "Which of the following is NOT a type of operating system?",
     "options": ["Batch", "Distributed", "Compiled", "Real-time"],
-    "correct": "Compiled",
-    "subject": "Computer Fundamentals",
-    "year": 2022,
-    "frequency": 2,
-    "difficulty": "hard"
+    "correct": "Compiled", "subject": "Computer Fundamentals", "year": 2022, "frequency": 2, "difficulty": "hard"
   },
   {
-    "id": 10,
-    "question": "Which gate outputs 1 only when all inputs are 1?",
+    "id": 15, "question": "1 Kilobyte is equal to how many bytes?",
+    "options": ["512", "1000", "1024", "2048"],
+    "correct": "1024", "subject": "Computer Fundamentals", "year": 2021, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 16, "question": "Which part of the CPU performs arithmetic operations?",
+    "options": ["CU", "ALU", "Register", "Cache"],
+    "correct": "ALU", "subject": "Computer Fundamentals", "year": 2022, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 17, "question": "Which generation of computers used transistors?",
+    "options": ["First", "Second", "Third", "Fourth"],
+    "correct": "Second", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "medium"
+  },
+  {
+    "id": 18, "question": "RAM is which type of memory?",
+    "options": ["Non-volatile", "Volatile", "Permanent", "Read-only"],
+    "correct": "Volatile", "subject": "Computer Fundamentals", "year": 2023, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 19, "question": "Which bus carries memory addresses?",
+    "options": ["Data Bus", "Control Bus", "Address Bus", "System Bus"],
+    "correct": "Address Bus", "subject": "Computer Fundamentals", "year": 2022, "frequency": 2, "difficulty": "medium"
+  },
+  {
+    "id": 20, "question": "BIOS stands for?",
+    "options": ["Basic Input Output System", "Binary Input Output System", "Basic Internal Output System", "None"],
+    "correct": "Basic Input Output System", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "medium"
+  },
+  {
+    "id": 21, "question": "Which gate outputs 1 only when all inputs are 1?",
     "options": ["OR", "NOT", "AND", "XOR"],
-    "correct": "AND",
-    "subject": "Digital Electronics",
-    "year": 2023,
-    "frequency": 4,
-    "difficulty": "easy"
+    "correct": "AND", "subject": "Digital Electronics", "year": 2023, "frequency": 4, "difficulty": "easy"
   },
   {
-    "id": 11,
-    "question": "Which gate outputs 1 when any input is 1?",
+    "id": 22, "question": "Which gate outputs 1 when any input is 1?",
     "options": ["AND", "NOT", "NAND", "OR"],
-    "correct": "OR",
-    "subject": "Digital Electronics",
-    "year": 2022,
-    "frequency": 3,
-    "difficulty": "easy"
+    "correct": "OR", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "easy"
   },
   {
-    "id": 12,
-    "question": "What is the complement of 1 in binary?",
+    "id": 23, "question": "What is the complement of 1 in binary?",
     "options": ["1", "0", "2", "None"],
-    "correct": "0",
-    "subject": "Digital Electronics",
-    "year": 2021,
-    "frequency": 3,
-    "difficulty": "easy"
+    "correct": "0", "subject": "Digital Electronics", "year": 2021, "frequency": 3, "difficulty": "easy"
   },
   {
-    "id": 13,
-    "question": "XOR gate outputs 1 when inputs are?",
+    "id": 24, "question": "XOR gate outputs 1 when inputs are?",
     "options": ["Same", "Different", "Both 0", "Both 1"],
-    "correct": "Different",
-    "subject": "Digital Electronics",
-    "year": 2023,
-    "frequency": 2,
-    "difficulty": "medium"
+    "correct": "Different", "subject": "Digital Electronics", "year": 2023, "frequency": 2, "difficulty": "medium"
   },
   {
-    "id": 14,
-    "question": "Simplify using Boolean algebra: A + A'B",
+    "id": 25, "question": "Simplify using Boolean algebra: A + A'B",
     "options": ["A", "B", "A + B", "A'"],
-    "correct": "A + B",
-    "subject": "Digital Electronics",
-    "year": 2022,
-    "frequency": 3,
-    "difficulty": "hard"
+    "correct": "A + B", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "hard"
+  },
+  {
+    "id": 26, "question": "Which logic gate is called universal gate?",
+    "options": ["AND", "OR", "NAND", "XOR"],
+    "correct": "NAND", "subject": "Digital Electronics", "year": 2023, "frequency": 4, "difficulty": "medium"
+  },
+  {
+    "id": 27, "question": "Binary equivalent of decimal 10 is?",
+    "options": ["1010", "1001", "1100", "0110"],
+    "correct": "1010", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 28, "question": "How many inputs does a half adder have?",
+    "options": ["1", "2", "3", "4"],
+    "correct": "2", "subject": "Digital Electronics", "year": 2021, "frequency": 2, "difficulty": "medium"
+  },
+  {
+    "id": 29, "question": "Which number system has base 16?",
+    "options": ["Binary", "Octal", "Decimal", "Hexadecimal"],
+    "correct": "Hexadecimal", "subject": "Digital Electronics", "year": 2023, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 30, "question": "De Morgan's theorem: (A.B)' = ?",
+    "options": ["A'.B'", "A+B", "A'.B", "A'+B'"],
+    "correct": "A'+B'", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "hard"
+  },
+  {
+    "id": 31, "question": "Which symbol is used for single-line comment in C?",
+    "options": ["#", "//", "/*", "--"],
+    "correct": "//", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "easy"
+  },
+  {
+    "id": 32, "question": "What is the output of: printf(\"%d\", 5+3);",
+    "options": ["5+3", "8", "53", "Error"],
+    "correct": "8", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 33, "question": "Which function is used to read a string in C?",
+    "options": ["scanf()", "gets()", "read()", "input()"],
+    "correct": "gets()", "subject": "C Programming", "year": 2023, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 34, "question": "What does malloc() return if allocation fails?",
+    "options": ["0", "-1", "NULL", "Error"],
+    "correct": "NULL", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 35, "question": "Which header file is needed for printf()?",
+    "options": ["stdlib.h", "string.h", "stdio.h", "math.h"],
+    "correct": "stdio.h", "subject": "C Programming", "year": 2021, "frequency": 5, "difficulty": "easy"
+  },
+  {
+    "id": 36, "question": "What is the size of int in C (32-bit system)?",
+    "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+    "correct": "4 bytes", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "easy"
+  },
+  {
+    "id": 37, "question": "Which operator is used to access address of a variable?",
+    "options": ["*", "&", "->", "#"],
+    "correct": "&", "subject": "C Programming", "year": 2022, "frequency": 4, "difficulty": "medium"
+  },
+  {
+    "id": 38, "question": "What is a pointer in C?",
+    "options": ["A variable storing value", "A variable storing address", "A function", "A data type"],
+    "correct": "A variable storing address", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "medium"
+  },
+  {
+    "id": 39, "question": "Which loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do-while", "None"],
+    "correct": "do-while", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 40, "question": "What is recursion?",
+    "options": ["Loop inside a function", "Function calling itself", "Array of functions", "None"],
+    "correct": "Function calling itself", "subject": "C Programming", "year": 2021, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 41, "question": "What is the value of 0! (0 factorial)?",
+    "options": ["0", "1", "Undefined", "Infinity"],
+    "correct": "1", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 42, "question": "How many edges does a complete graph K4 have?",
+    "options": ["4", "6", "8", "12"],
+    "correct": "6", "subject": "Discrete Mathematics", "year": 2022, "frequency": 2, "difficulty": "hard"
+  },
+  {
+    "id": 43, "question": "A∪B means?",
+    "options": ["A intersection B", "A union B", "A minus B", "Complement of A"],
+    "correct": "A union B", "subject": "Discrete Mathematics", "year": 2021, "frequency": 3, "difficulty": "easy"
+  },
+  {
+    "id": 44, "question": "Which of the following is a tautology?",
+    "options": ["P ∧ ¬P", "P ∨ ¬P", "P ∧ Q", "P → Q"],
+    "correct": "P ∨ ¬P", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 45, "question": "A relation that is reflexive, symmetric and transitive is called?",
+    "options": ["Partial order", "Equivalence relation", "Total order", "Function"],
+    "correct": "Equivalence relation", "subject": "Discrete Mathematics", "year": 2022, "frequency": 3, "difficulty": "medium"
+  },
+  {
+    "id": 46, "question": "How many subsets does a set with 3 elements have?",
+    "options": ["6", "8", "9", "3"],
+    "correct": "8", "subject": "Discrete Mathematics", "year": 2021, "frequency": 2, "difficulty": "medium"
+  },
+  {
+    "id": 47, "question": "Which of the following is NOT a valid graph traversal?",
+    "options": ["BFS", "DFS", "Inorder", "None — all are valid"],
+    "correct": "Inorder", "subject": "Discrete Mathematics", "year": 2023, "frequency": 2, "difficulty": "hard"
+  },
+  {
+    "id": 48, "question": "P → Q is equivalent to?",
+    "options": ["¬P ∨ Q", "P ∨ Q", "¬P ∧ Q", "P ∧ ¬Q"],
+    "correct": "¬P ∨ Q", "subject": "Discrete Mathematics", "year": 2022, "frequency": 3, "difficulty": "hard"
+  },
+  {
+    "id": 49, "question": "In how many ways can 3 books be arranged on a shelf?",
+    "options": ["3", "6", "9", "12"],
+    "correct": "6", "subject": "Discrete Mathematics", "year": 2021, "frequency": 2, "difficulty": "easy"
+  },
+  {
+    "id": 50, "question": "A tree with n vertices has how many edges?",
+    "options": ["n", "n+1", "n-1", "2n"],
+    "correct": "n-1", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "medium"
   }
 ]

@@ -23,6 +23,7 @@ export default function App() {
   const [score, setScore]                     = useState(0);
   const [answers, setAnswers]                 = useState([]);
   const [timeLeft, setTimeLeft]               = useState(TIMER_SECONDS);
+  const [showQuitDialog, setShowQuitDialog]   = useState(false);
 
   useEffect(() => {
     if (screen !== "test") return;
@@ -199,11 +200,40 @@ export default function App() {
   }
 
   // ── TEST ──
+  // ── TEST ──
   if (screen === "test") {
     const q = questions[current];
     const progress = (current / questions.length) * 100;
     return (
       <div style={s.page}>
+
+        {/* Quit Confirmation Dialog */}
+        {showQuitDialog && (
+          <div style={s.overlay}>
+            <div style={s.dialog}>
+              <p style={{ fontSize: "1.5rem", margin: "0 0 0.5rem" }}>⚠️</p>
+              <h3 style={{ color: "#fff", margin: "0 0 0.5rem", fontSize: "1.1rem" }}>Quit Test?</h3>
+              <p style={{ color: "#8888aa", fontSize: "0.9rem", margin: "0 0 1.5rem", textAlign: "center" }}>
+                Your progress will be lost. Are you sure?
+              </p>
+              <div style={{ display: "flex", gap: "0.8rem" }}>
+                <button
+                  style={{ ...s.btn, background: "#1e1e3a", border: "1px solid #2e2e4e", padding: "0.7rem 1.5rem" }}
+                  onClick={() => setShowQuitDialog(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  style={{ ...s.btn, background: "linear-gradient(135deg, #f87171, #ef4444)", padding: "0.7rem 1.5rem" }}
+                  onClick={() => { setShowQuitDialog(false); restart(); }}
+                >
+                  Yes, Quit
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div style={s.progressBg}>
           <div style={{ ...s.progressFill, width: `${progress}%` }} />
         </div>
@@ -230,9 +260,16 @@ export default function App() {
           </div>
           <button
             style={{ ...s.btn, opacity: selected ? 1 : 0.35, marginTop: "1.5rem" }}
-            onClick={() => handleNext(false)} disabled={!selected}
+            onClick={() => handleNext(false)}
+            disabled={!selected}
           >
             {current + 1 === questions.length ? "Finish →" : "Next →"}
+          </button>
+          <button
+            style={s.abortBtn}
+            onClick={() => setShowQuitDialog(true)}
+          >
+            ✕ Quit Test
           </button>
         </div>
       </div>
@@ -353,4 +390,27 @@ const s = {
   tagChip: { background: "#6c63ff22", color: "#a89cff", border: "1px solid #6c63ff44", borderRadius: "20px", padding: "0.25rem 0.9rem", fontSize: "0.8rem" },
   pyqCard: { width: "100%", background: "#0d0d24", border: "1px solid #2e2e4e", borderRadius: "14px", padding: "1rem 1.2rem", marginBottom: "0.9rem" },
   pyqSubject: { color: "#6c63ff", fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.07em" },
+  abortBtn: {
+  background: "transparent", color: "#555577",
+  border: "1px solid #2e2e4e", padding: "0.5rem 1.5rem",
+  borderRadius: "20px", fontSize: "0.85rem",
+  cursor: "pointer", marginTop: "0.8rem"},
+  abortBtn: {
+    background: "transparent", color: "#555577",
+    border: "1px solid #2e2e4e", padding: "0.5rem 1.5rem",
+    borderRadius: "20px", fontSize: "0.85rem",
+    cursor: "pointer", marginTop: "0.8rem"},
+  overlay: {
+    position: "fixed", inset: 0,
+    background: "#00000088",
+    display: "flex", alignItems: "center",
+    justifyContent: "center", zIndex: 100
+  },
+  dialog: {
+    background: "#11112b", border: "1px solid #2e2e4e",
+    borderRadius: "20px", padding: "2rem",
+    display: "flex", flexDirection: "column",
+    alignItems: "center", maxWidth: "320px", width: "90%",
+    boxShadow: "0 0 40px #00000099"
+  },
 };
