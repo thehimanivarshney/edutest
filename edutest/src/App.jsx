@@ -2,21 +2,18 @@ import { useState, useEffect } from "react";
 import allQuestions from "./data/questions.json";
 
 const TIMER_SECONDS = 30;
-
-// Get unique subjects from question bank
 const subjects = ["All Subjects", ...new Set(allQuestions.map(q => q.subject))];
 
 export default function App() {
-  const [screen, setScreen]       = useState("home");
+  const [screen, setScreen]               = useState("home");
   const [selectedSubject, setSelectedSubject] = useState("All Subjects");
-  const [questions, setQuestions] = useState([]);
-  const [current, setCurrent]     = useState(0);
-  const [selected, setSelected]   = useState(null);
-  const [score, setScore]         = useState(0);
-  const [answers, setAnswers]     = useState([]);
-  const [timeLeft, setTimeLeft]   = useState(TIMER_SECONDS);
+  const [questions, setQuestions]         = useState([]);
+  const [current, setCurrent]             = useState(0);
+  const [selected, setSelected]           = useState(null);
+  const [score, setScore]                 = useState(0);
+  const [answers, setAnswers]             = useState([]);
+  const [timeLeft, setTimeLeft]           = useState(TIMER_SECONDS);
 
-  // Timer
   useEffect(() => {
     if (screen !== "test") return;
     if (timeLeft === 0) { handleNext(true); return; }
@@ -29,10 +26,8 @@ export default function App() {
       ? allQuestions
       : allQuestions.filter(q => q.subject === selectedSubject);
     setQuestions(filtered);
-    setCurrent(0);
-    setScore(0);
-    setAnswers([]);
-    setSelected(null);
+    setCurrent(0); setScore(0);
+    setAnswers([]); setSelected(null);
     setTimeLeft(TIMER_SECONDS);
     setScreen("test");
   }
@@ -47,8 +42,7 @@ export default function App() {
       isCorrect
     }];
     setAnswers(newAnswers);
-    if (isCorrect) setScore(s => s + 1);
-
+    if (isCorrect) setScore(sc => sc + 1);
     if (current + 1 < questions.length) {
       setCurrent(c => c + 1);
       setSelected(null);
@@ -59,10 +53,8 @@ export default function App() {
   }
 
   function restart() {
-    setScreen("home");
-    setCurrent(0); setScore(0);
-    setSelected(null); setAnswers([]);
-    setTimeLeft(TIMER_SECONDS);
+    setScreen("home"); setCurrent(0); setScore(0);
+    setSelected(null); setAnswers([]); setTimeLeft(TIMER_SECONDS);
   }
 
   const timerColor = timeLeft > 15 ? "#4ade80" : timeLeft > 7 ? "#facc15" : "#f87171";
@@ -74,27 +66,19 @@ export default function App() {
         <div style={s.badge}>AKTU BCA · PYQ Bank</div>
         <h1 style={s.hero}>EduTest</h1>
         <p style={s.sub}>Practice smarter. Track weak spots. Ace the exam.</p>
-
-        {/* Subject Filter */}
         <p style={s.filterLabel}>Select Subject</p>
         <div style={s.subjectGrid}>
           {subjects.map(sub => (
-            <button
-              key={sub}
-              style={{
-                ...s.subjectBtn,
-                background: selectedSubject === sub ? "#6c63ff" : "transparent",
-                borderColor: selectedSubject === sub ? "#6c63ff" : "#2e2e4e",
-                color: selectedSubject === sub ? "#fff" : "#8888aa"
-              }}
-              onClick={() => setSelectedSubject(sub)}
-            >
+            <button key={sub} style={{
+              ...s.subjectBtn,
+              background: selectedSubject === sub ? "#6c63ff" : "transparent",
+              borderColor: selectedSubject === sub ? "#6c63ff" : "#2e2e4e",
+              color: selectedSubject === sub ? "#fff" : "#8888aa"
+            }} onClick={() => setSelectedSubject(sub)}>
               {sub === "All Subjects" ? "⚡ " : "📘 "}{sub}
             </button>
           ))}
         </div>
-
-        {/* Stats */}
         <div style={s.statsRow}>
           <div style={s.stat}>
             <span style={s.statNum}>
@@ -113,10 +97,7 @@ export default function App() {
             <span style={s.statLabel}>Per Correct</span>
           </div>
         </div>
-
-        <button style={s.btn} onClick={startTest}>
-          Start Test →
-        </button>
+        <button style={s.btn} onClick={startTest}>Start Test →</button>
       </div>
     </div>
   );
@@ -139,15 +120,11 @@ export default function App() {
           <h2 style={s.question}>{q.question}</h2>
           <div style={{ width: "100%" }}>
             {q.options.map(opt => (
-              <button
-                key={opt}
-                style={{
-                  ...s.option,
-                  background: selected === opt ? "#6c63ff" : "transparent",
-                  borderColor: selected === opt ? "#6c63ff" : "#2e2e4e",
-                }}
-                onClick={() => setSelected(opt)}
-              >
+              <button key={opt} style={{
+                ...s.option,
+                background: selected === opt ? "#6c63ff" : "transparent",
+                borderColor: selected === opt ? "#6c63ff" : "#2e2e4e",
+              }} onClick={() => setSelected(opt)}>
                 {opt}
               </button>
             ))}
@@ -167,28 +144,68 @@ export default function App() {
   // ── RESULT ──
   if (screen === "result") {
     const pct = Math.round((score / questions.length) * 100);
+
+    const subjectMap = {};
+    answers.forEach((a) => {
+      const q = questions.find(q => q.question === a.question);
+      const sub = q ? q.subject : "Unknown";
+      if (!subjectMap[sub]) subjectMap[sub] = { correct: 0, total: 0 };
+      subjectMap[sub].total += 1;
+      if (a.isCorrect) subjectMap[sub].correct += 1;
+    });
+    const subjectStats = Object.entries(subjectMap);
+
     return (
       <div style={s.page}>
         <div style={{ ...s.card, maxWidth: "620px" }}>
           <h1 style={s.hero}>Result</h1>
           <div style={s.scoreBig}>{score}<span style={s.scoreOf}>/{questions.length}</span></div>
-          <p style={{ ...s.sub, marginBottom: "0.3rem" }}>{pct}% Accuracy</p>
+          <p style={{ ...s.sub, marginBottom: "0.3rem" }}>{pct}% Overall Accuracy</p>
           <p style={{ color: pct >= 60 ? "#4ade80" : "#f87171", fontSize: "1.1rem", marginBottom: "0.5rem" }}>
             {pct >= 60 ? "✅ Great Performance!" : "❌ Keep Practicing!"}
           </p>
-          <p style={{ color: "#6c63ff", fontSize: "0.85rem", marginBottom: "1.5rem" }}>
+          <p style={{ color: "#6c63ff", fontSize: "0.85rem", marginBottom: "2rem" }}>
             Subject: {selectedSubject}
           </p>
 
+          {/* Subject-wise Chart */}
+          <div style={{ width: "100%", marginBottom: "2rem" }}>
+            <p style={s.filterLabel}>📊 Subject-wise Performance</p>
+            {subjectStats.map(([sub, stat]) => {
+              const subPct = Math.round((stat.correct / stat.total) * 100);
+              const barColor = subPct >= 70 ? "#4ade80" : subPct >= 40 ? "#facc15" : "#f87171";
+              return (
+                <div key={sub} style={{ marginBottom: "1.1rem", textAlign: "left" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.3rem" }}>
+                    <span style={{ color: "#e2e8f0", fontSize: "0.9rem" }}>{sub}</span>
+                    <span style={{ color: barColor, fontSize: "0.9rem", fontWeight: "600" }}>
+                      {stat.correct}/{stat.total} · {subPct}%
+                    </span>
+                  </div>
+                  <div style={{ background: "#1e1e3a", borderRadius: "10px", height: "10px", overflow: "hidden" }}>
+                    <div style={{
+                      width: `${subPct}%`, height: "100%",
+                      background: barColor, borderRadius: "10px",
+                      transition: "width 0.8s ease"
+                    }} />
+                  </div>
+                  <p style={{ color: "#555577", fontSize: "0.75rem", margin: "0.3rem 0 0" }}>
+                    {subPct >= 70 ? "✅ Strong area" : subPct >= 40 ? "⚠️ Needs revision" : "❌ Weak area — focus here"}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Answer Review */}
+          <p style={s.filterLabel}>📝 Answer Review</p>
           <div style={{ width: "100%" }}>
             {answers.map((a, i) => (
               <div key={i} style={{
                 background: a.isCorrect ? "#0f2d1f" : "#2d0f0f",
                 border: `1px solid ${a.isCorrect ? "#166534" : "#7f1d1d"}`,
-                borderRadius: "10px",
-                padding: "0.9rem 1.1rem",
-                marginBottom: "0.7rem",
-                textAlign: "left"
+                borderRadius: "10px", padding: "0.9rem 1.1rem",
+                marginBottom: "0.7rem", textAlign: "left"
               }}>
                 <p style={{ color: "#e2e8f0", margin: "0 0 0.3rem", fontSize: "0.95rem" }}>
                   Q{i + 1}: {a.question}
@@ -201,13 +218,11 @@ export default function App() {
             ))}
           </div>
 
-          <div style={{ display: "flex", gap: "1rem", marginTop: "1.2rem" }}>
+          <div style={{ display: "flex", gap: "1rem", marginTop: "1.2rem", flexWrap: "wrap", justifyContent: "center" }}>
             <button style={{ ...s.btn, background: "#1e1e3a", border: "1px solid #6c63ff" }} onClick={restart}>
               ← Change Subject
             </button>
-            <button style={s.btn} onClick={startTest}>
-              🔄 Retry Same
-            </button>
+            <button style={s.btn} onClick={startTest}>🔄 Retry Same</button>
           </div>
         </div>
       </div>
@@ -237,12 +252,12 @@ const s = {
   },
   hero: { fontSize: "2.8rem", fontWeight: "800", margin: "0 0 0.5rem", letterSpacing: "-1px" },
   sub: { color: "#8888aa", fontSize: "1rem", textAlign: "center", marginBottom: "1.5rem" },
-  filterLabel: { color: "#8888aa", fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.8rem" },
+  filterLabel: { color: "#8888aa", fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.8rem", alignSelf: "flex-start" },
   subjectGrid: { display: "flex", flexWrap: "wrap", gap: "0.6rem", justifyContent: "center", marginBottom: "1.8rem" },
   subjectBtn: {
     padding: "0.55rem 1.1rem", borderRadius: "30px",
     border: "1px solid #2e2e4e", cursor: "pointer",
-    fontSize: "0.88rem", fontWeight: "500", transition: "all 0.15s"
+    fontSize: "0.88rem", fontWeight: "500"
   },
   statsRow: { display: "flex", gap: "2rem", marginBottom: "2rem" },
   stat: { display: "flex", flexDirection: "column", alignItems: "center" },
