@@ -1,252 +1,136 @@
 [
-  {
-    "id": 1, "question": "Which data structure follows LIFO order?",
-    "options": ["Queue", "Stack", "Array", "Linked List"],
-    "correct": "Stack", "subject": "Data Structures", "year": 2023, "frequency": 5, "difficulty": "easy"
-  },
-  {
-    "id": 2, "question": "Which data structure follows FIFO order?",
-    "options": ["Stack", "Tree", "Queue", "Graph"],
-    "correct": "Queue", "subject": "Data Structures", "year": 2022, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 3, "question": "What is the time complexity of binary search?",
-    "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
-    "correct": "O(log n)", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 4, "question": "Which traversal visits root node first?",
-    "options": ["Inorder", "Postorder", "Preorder", "Level order"],
-    "correct": "Preorder", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 5, "question": "What is the worst case time complexity of quicksort?",
-    "options": ["O(n log n)", "O(n)", "O(n²)", "O(log n)"],
-    "correct": "O(n²)", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "hard"
-  },
-  {
-    "id": 6, "question": "Which data structure is used for function call management?",
-    "options": ["Queue", "Stack", "Array", "Tree"],
-    "correct": "Stack", "subject": "Data Structures", "year": 2021, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 7, "question": "A binary tree with n nodes has how many null pointers?",
-    "options": ["n", "n-1", "n+1", "2n"],
-    "correct": "n+1", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "hard"
-  },
-  {
-    "id": 8, "question": "Which sorting algorithm has best average case complexity?",
-    "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
-    "correct": "Merge Sort", "subject": "Data Structures", "year": 2023, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 9, "question": "In a stack, which operation removes the top element?",
-    "options": ["Push", "Peek", "Pop", "Insert"],
-    "correct": "Pop", "subject": "Data Structures", "year": 2021, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 10, "question": "Which tree has all leaves at the same level?",
-    "options": ["Binary Tree", "BST", "Complete Binary Tree", "Full Binary Tree"],
-    "correct": "Complete Binary Tree", "subject": "Data Structures", "year": 2022, "frequency": 2, "difficulty": "hard"
-  },
-  {
-    "id": 11, "question": "What does CPU stand for?",
-    "options": ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Core Processing Unit"],
-    "correct": "Central Processing Unit", "subject": "Computer Fundamentals", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 12, "question": "Which memory is fastest?",
-    "options": ["RAM", "Hard Disk", "Cache", "ROM"],
-    "correct": "Cache", "subject": "Computer Fundamentals", "year": 2023, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 13, "question": "Full form of ALU?",
-    "options": ["Arithmetic Logic Unit", "Array Logic Unit", "Arithmetic Linear Unit", "None"],
-    "correct": "Arithmetic Logic Unit", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "easy"
-  },
-  {
-    "id": 14, "question": "Which of the following is NOT a type of operating system?",
-    "options": ["Batch", "Distributed", "Compiled", "Real-time"],
-    "correct": "Compiled", "subject": "Computer Fundamentals", "year": 2022, "frequency": 2, "difficulty": "hard"
-  },
-  {
-    "id": 15, "question": "1 Kilobyte is equal to how many bytes?",
-    "options": ["512", "1000", "1024", "2048"],
-    "correct": "1024", "subject": "Computer Fundamentals", "year": 2021, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 16, "question": "Which part of the CPU performs arithmetic operations?",
-    "options": ["CU", "ALU", "Register", "Cache"],
-    "correct": "ALU", "subject": "Computer Fundamentals", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 17, "question": "Which generation of computers used transistors?",
-    "options": ["First", "Second", "Third", "Fourth"],
-    "correct": "Second", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 18, "question": "RAM is which type of memory?",
-    "options": ["Non-volatile", "Volatile", "Permanent", "Read-only"],
-    "correct": "Volatile", "subject": "Computer Fundamentals", "year": 2023, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 19, "question": "Which bus carries memory addresses?",
-    "options": ["Data Bus", "Control Bus", "Address Bus", "System Bus"],
-    "correct": "Address Bus", "subject": "Computer Fundamentals", "year": 2022, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 20, "question": "BIOS stands for?",
-    "options": ["Basic Input Output System", "Binary Input Output System", "Basic Internal Output System", "None"],
-    "correct": "Basic Input Output System", "subject": "Computer Fundamentals", "year": 2021, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 21, "question": "Which gate outputs 1 only when all inputs are 1?",
-    "options": ["OR", "NOT", "AND", "XOR"],
-    "correct": "AND", "subject": "Digital Electronics", "year": 2023, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 22, "question": "Which gate outputs 1 when any input is 1?",
-    "options": ["AND", "NOT", "NAND", "OR"],
-    "correct": "OR", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 23, "question": "What is the complement of 1 in binary?",
-    "options": ["1", "0", "2", "None"],
-    "correct": "0", "subject": "Digital Electronics", "year": 2021, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 24, "question": "XOR gate outputs 1 when inputs are?",
-    "options": ["Same", "Different", "Both 0", "Both 1"],
-    "correct": "Different", "subject": "Digital Electronics", "year": 2023, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 25, "question": "Simplify using Boolean algebra: A + A'B",
-    "options": ["A", "B", "A + B", "A'"],
-    "correct": "A + B", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "hard"
-  },
-  {
-    "id": 26, "question": "Which logic gate is called universal gate?",
-    "options": ["AND", "OR", "NAND", "XOR"],
-    "correct": "NAND", "subject": "Digital Electronics", "year": 2023, "frequency": 4, "difficulty": "medium"
-  },
-  {
-    "id": 27, "question": "Binary equivalent of decimal 10 is?",
-    "options": ["1010", "1001", "1100", "0110"],
-    "correct": "1010", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 28, "question": "How many inputs does a half adder have?",
-    "options": ["1", "2", "3", "4"],
-    "correct": "2", "subject": "Digital Electronics", "year": 2021, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 29, "question": "Which number system has base 16?",
-    "options": ["Binary", "Octal", "Decimal", "Hexadecimal"],
-    "correct": "Hexadecimal", "subject": "Digital Electronics", "year": 2023, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 30, "question": "De Morgan's theorem: (A.B)' = ?",
-    "options": ["A'.B'", "A+B", "A'.B", "A'+B'"],
-    "correct": "A'+B'", "subject": "Digital Electronics", "year": 2022, "frequency": 3, "difficulty": "hard"
-  },
-  {
-    "id": 31, "question": "Which symbol is used for single-line comment in C?",
-    "options": ["#", "//", "/*", "--"],
-    "correct": "//", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 32, "question": "What is the output of: printf(\"%d\", 5+3);",
-    "options": ["5+3", "8", "53", "Error"],
-    "correct": "8", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 33, "question": "Which function is used to read a string in C?",
-    "options": ["scanf()", "gets()", "read()", "input()"],
-    "correct": "gets()", "subject": "C Programming", "year": 2023, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 34, "question": "What does malloc() return if allocation fails?",
-    "options": ["0", "-1", "NULL", "Error"],
-    "correct": "NULL", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 35, "question": "Which header file is needed for printf()?",
-    "options": ["stdlib.h", "string.h", "stdio.h", "math.h"],
-    "correct": "stdio.h", "subject": "C Programming", "year": 2021, "frequency": 5, "difficulty": "easy"
-  },
-  {
-    "id": 36, "question": "What is the size of int in C (32-bit system)?",
-    "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
-    "correct": "4 bytes", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "easy"
-  },
-  {
-    "id": 37, "question": "Which operator is used to access address of a variable?",
-    "options": ["*", "&", "->", "#"],
-    "correct": "&", "subject": "C Programming", "year": 2022, "frequency": 4, "difficulty": "medium"
-  },
-  {
-    "id": 38, "question": "What is a pointer in C?",
-    "options": ["A variable storing value", "A variable storing address", "A function", "A data type"],
-    "correct": "A variable storing address", "subject": "C Programming", "year": 2023, "frequency": 4, "difficulty": "medium"
-  },
-  {
-    "id": 39, "question": "Which loop is guaranteed to execute at least once?",
-    "options": ["for", "while", "do-while", "None"],
-    "correct": "do-while", "subject": "C Programming", "year": 2022, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 40, "question": "What is recursion?",
-    "options": ["Loop inside a function", "Function calling itself", "Array of functions", "None"],
-    "correct": "Function calling itself", "subject": "C Programming", "year": 2021, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 41, "question": "What is the value of 0! (0 factorial)?",
-    "options": ["0", "1", "Undefined", "Infinity"],
-    "correct": "1", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 42, "question": "How many edges does a complete graph K4 have?",
-    "options": ["4", "6", "8", "12"],
-    "correct": "6", "subject": "Discrete Mathematics", "year": 2022, "frequency": 2, "difficulty": "hard"
-  },
-  {
-    "id": 43, "question": "A∪B means?",
-    "options": ["A intersection B", "A union B", "A minus B", "Complement of A"],
-    "correct": "A union B", "subject": "Discrete Mathematics", "year": 2021, "frequency": 3, "difficulty": "easy"
-  },
-  {
-    "id": 44, "question": "Which of the following is a tautology?",
-    "options": ["P ∧ ¬P", "P ∨ ¬P", "P ∧ Q", "P → Q"],
-    "correct": "P ∨ ¬P", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 45, "question": "A relation that is reflexive, symmetric and transitive is called?",
-    "options": ["Partial order", "Equivalence relation", "Total order", "Function"],
-    "correct": "Equivalence relation", "subject": "Discrete Mathematics", "year": 2022, "frequency": 3, "difficulty": "medium"
-  },
-  {
-    "id": 46, "question": "How many subsets does a set with 3 elements have?",
-    "options": ["6", "8", "9", "3"],
-    "correct": "8", "subject": "Discrete Mathematics", "year": 2021, "frequency": 2, "difficulty": "medium"
-  },
-  {
-    "id": 47, "question": "Which of the following is NOT a valid graph traversal?",
-    "options": ["BFS", "DFS", "Inorder", "None — all are valid"],
-    "correct": "Inorder", "subject": "Discrete Mathematics", "year": 2023, "frequency": 2, "difficulty": "hard"
-  },
-  {
-    "id": 48, "question": "P → Q is equivalent to?",
-    "options": ["¬P ∨ Q", "P ∨ Q", "¬P ∧ Q", "P ∧ ¬Q"],
-    "correct": "¬P ∨ Q", "subject": "Discrete Mathematics", "year": 2022, "frequency": 3, "difficulty": "hard"
-  },
-  {
-    "id": 49, "question": "In how many ways can 3 books be arranged on a shelf?",
-    "options": ["3", "6", "9", "12"],
-    "correct": "6", "subject": "Discrete Mathematics", "year": 2021, "frequency": 2, "difficulty": "easy"
-  },
-  {
-    "id": 50, "question": "A tree with n vertices has how many edges?",
-    "options": ["n", "n+1", "n-1", "2n"],
-    "correct": "n-1", "subject": "Discrete Mathematics", "year": 2023, "frequency": 3, "difficulty": "medium"
-  }
+  { "id": 1, "question": "Which of the following is a non-linear data structure?", "options": ["Array", "Queue", "Stack", "Tree"], "correct": "Tree", "subject": "Data Structures", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 2, "question": "A sparse matrix is a matrix in which most elements are?", "options": ["1", "Non-zero", "Zero", "Negative"], "correct": "Zero", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 3, "question": "Which condition is called overflow in a queue?", "options": ["Queue is empty", "Queue is full and insertion is attempted", "Queue has one element", "Queue is being deleted"], "correct": "Queue is full and insertion is attempted", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 4, "question": "Which condition is called underflow in a queue?", "options": ["Queue is full", "Deletion attempted on empty queue", "Queue has two elements", "Insertion fails"], "correct": "Deletion attempted on empty queue", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 5, "question": "In a threaded binary tree, null pointers are replaced by?", "options": ["Zeros", "Pointers to root", "Pointers to inorder predecessor or successor", "Random addresses"], "correct": "Pointers to inorder predecessor or successor", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 6, "question": "Which data structure follows LIFO order?", "options": ["Queue", "Stack", "Array", "Linked List"], "correct": "Stack", "subject": "Data Structures", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 7, "question": "Which operation inserts an element into a stack?", "options": ["Enqueue", "Push", "Insert", "Add"], "correct": "Push", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 8, "question": "Which operation removes the top element from a stack?", "options": ["Dequeue", "Pop", "Delete", "Remove"], "correct": "Pop", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 9, "question": "What is the main limitation of a linear queue using arrays?", "options": ["Slow insertion", "Memory wastage after deletions", "No rear pointer", "Cannot store integers"], "correct": "Memory wastage after deletions", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 10, "question": "Circular queue resolves the limitation of linear queue by?", "options": ["Using linked list", "Doubling array size", "Reusing vacated front positions", "Using two stacks"], "correct": "Reusing vacated front positions", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 11, "question": "In a Binary Search Tree, inorder traversal gives elements in?", "options": ["Random order", "Reverse order", "Sorted ascending order", "Level order"], "correct": "Sorted ascending order", "subject": "Data Structures", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 12, "question": "What is the time complexity of merge sort in all cases?", "options": ["O(n²)", "O(n)", "O(n log n)", "O(log n)"], "correct": "O(n log n)", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 13, "question": "A B-Tree of order m can have at most how many children per node?", "options": ["m-1", "m", "m+1", "2m"], "correct": "m", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 14, "question": "Which traversal visits: Left → Root → Right?", "options": ["Preorder", "Postorder", "Inorder", "Level order"], "correct": "Inorder", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 15, "question": "Which traversal visits: Root → Left → Right?", "options": ["Inorder", "Postorder", "Preorder", "Level order"], "correct": "Preorder", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 16, "question": "Postfix notation of A+B is?", "options": ["A+B", "+AB", "AB+", "BA+"], "correct": "AB+", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 17, "question": "Prefix notation of A+B is?", "options": ["AB+", "BA+", "+AB", "A+B"], "correct": "+AB", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 18, "question": "Tower of Hanoi with n disks requires how many moves?", "options": ["n²", "2n", "2ⁿ - 1", "n log n"], "correct": "2ⁿ - 1", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 19, "question": "In dynamic memory allocation, memory is allocated at?", "options": ["Compile time", "Link time", "Runtime", "Boot time"], "correct": "Runtime", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 20, "question": "In a singly linked list, each node contains?", "options": ["Only data", "Only pointer", "Data and pointer to next node", "Two pointers"], "correct": "Data and pointer to next node", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 21, "question": "In a Max-Heap, the root always contains?", "options": ["Minimum element", "Maximum element", "Middle element", "Random element"], "correct": "Maximum element", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 22, "question": "AVL tree is a?", "options": ["Unbalanced BST", "Self-balancing BST", "Complete binary tree", "B-Tree"], "correct": "Self-balancing BST", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 23, "question": "The balance factor in an AVL tree is defined as?", "options": ["Left height + Right height", "Left height - Right height", "Right height - Root height", "None of these"], "correct": "Left height - Right height", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 24, "question": "Time complexity of binary search algorithm is?", "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"], "correct": "O(log n)", "subject": "Data Structures", "year": 2025, "frequency": 5, "difficulty": "medium" },
+  { "id": 25, "question": "In hashing, collision occurs when?", "options": ["Table is empty", "Two keys map to the same index", "Key is not found", "Table overflows"], "correct": "Two keys map to the same index", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 26, "question": "Which graph traversal uses a queue?", "options": ["DFS", "BFS", "Inorder", "Postorder"], "correct": "BFS", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 27, "question": "Which graph traversal uses a stack?", "options": ["BFS", "DFS", "Level order", "Preorder"], "correct": "DFS", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 28, "question": "Kruskal's algorithm is used to find?", "options": ["Shortest path", "Minimum Spanning Tree", "Maximum flow", "Topological sort"], "correct": "Minimum Spanning Tree", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 29, "question": "A spanning tree of a graph with n vertices has how many edges?", "options": ["n", "n+1", "n-1", "2n"], "correct": "n-1", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 30, "question": "Which data structure is used for function call management?", "options": ["Queue", "Stack", "Array", "Tree"], "correct": "Stack", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 31, "question": "Linear probing is a technique used in?", "options": ["Sorting", "Hashing collision resolution", "Tree traversal", "Graph search"], "correct": "Hashing collision resolution", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 32, "question": "What is the height of a complete binary tree with 7 nodes?", "options": ["2", "3", "4", "7"], "correct": "3", "subject": "Data Structures", "year": 2025, "frequency": 2, "difficulty": "hard" },
+  { "id": 33, "question": "A binary tree with n nodes has how many null pointers?", "options": ["n", "n-1", "n+1", "2n"], "correct": "n+1", "subject": "Data Structures", "year": 2025, "frequency": 2, "difficulty": "hard" },
+  { "id": 34, "question": "Merge sort uses which design technique?", "options": ["Greedy", "Dynamic Programming", "Divide and Conquer", "Backtracking"], "correct": "Divide and Conquer", "subject": "Data Structures", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 35, "question": "Which sorting algorithm has worst case O(n²)?", "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Counting Sort"], "correct": "Quick Sort", "subject": "Data Structures", "year": 2025, "frequency": 3, "difficulty": "medium" },
+
+  { "id": 36, "question": "In digital systems, signals have how many states?", "options": ["1", "2", "3", "4"], "correct": "2", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 37, "question": "What is the key difference between digital and analog systems?", "options": ["Digital uses continuous signals", "Analog uses discrete signals", "Digital uses discrete signals", "Both use same signals"], "correct": "Digital uses discrete signals", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 38, "question": "SOP stands for?", "options": ["Sum of Products", "Sum of Pairs", "Set of Products", "Series of Pairs"], "correct": "Sum of Products", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 39, "question": "POS stands for?", "options": ["Product of Sums", "Power of Signals", "Product of Sets", "Pair of Sums"], "correct": "Product of Sums", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 40, "question": "Don't care conditions in Boolean minimization are represented by?", "options": ["0", "1", "X", "D"], "correct": "X", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 41, "question": "A multiplexer selects one of many inputs based on?", "options": ["Clock signal", "Reset signal", "Select lines", "Enable pin"], "correct": "Select lines", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 42, "question": "A demultiplexer routes one input to how many outputs?", "options": ["One fixed output", "Multiple outputs", "Only two outputs", "None"], "correct": "Multiple outputs", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 43, "question": "A combinational circuit output depends on?", "options": ["Previous state only", "Current inputs only", "Both current and previous", "Clock only"], "correct": "Current inputs only", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 44, "question": "A sequential circuit output depends on?", "options": ["Current inputs only", "Previous outputs only", "Current inputs and previous state", "None"], "correct": "Current inputs and previous state", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 45, "question": "A counter is used to?", "options": ["Store data", "Count clock pulses", "Decode signals", "Multiply numbers"], "correct": "Count clock pulses", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 46, "question": "Hexadecimal number system has base?", "options": ["2", "8", "10", "16"], "correct": "16", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 47, "question": "Octal number system has base?", "options": ["2", "8", "10", "16"], "correct": "8", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 48, "question": "Binary number system has base?", "options": ["1", "2", "8", "10"], "correct": "2", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 49, "question": "Why is binary preferred in digital computers?", "options": ["Easier to print", "Matches two stable electronic states", "Faster than decimal", "Uses less memory"], "correct": "Matches two stable electronic states", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 50, "question": "2's complement of a binary number is obtained by?", "options": ["Inverting all bits", "Adding 1 to 1's complement", "Subtracting 1", "Doubling the number"], "correct": "Adding 1 to 1's complement", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 51, "question": "1's complement is obtained by?", "options": ["Adding 1 to number", "Inverting all bits", "Subtracting from 2ⁿ", "Multiplying by -1"], "correct": "Inverting all bits", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 52, "question": "NAND gate is called universal gate because?", "options": ["It is fastest", "All other gates can be built from it", "It uses least power", "It has most inputs"], "correct": "All other gates can be built from it", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 53, "question": "NOR gate is also a universal gate. Which statement is correct?", "options": ["Only NAND is universal", "Only NOR is universal", "Both NAND and NOR are universal gates", "AND and OR are universal"], "correct": "Both NAND and NOR are universal gates", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 54, "question": "XOR gate output is 1 when?", "options": ["Both inputs same", "Inputs are different", "Both inputs 0", "Both inputs 1"], "correct": "Inputs are different", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 55, "question": "XNOR gate output is 1 when?", "options": ["Inputs are different", "Both inputs same", "First input is 0", "Second input is 1"], "correct": "Both inputs same", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 56, "question": "A half adder has how many inputs?", "options": ["1", "2", "3", "4"], "correct": "2", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 57, "question": "A full adder has how many inputs?", "options": ["1", "2", "3", "4"], "correct": "3", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 58, "question": "8-to-1 multiplexer has how many select lines?", "options": ["1", "2", "3", "4"], "correct": "3", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 59, "question": "A shift register is used to?", "options": ["Count pulses", "Store and shift binary data", "Decode addresses", "Perform addition"], "correct": "Store and shift binary data", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 60, "question": "In a synchronous counter, all flip-flops are triggered by?", "options": ["Different clocks", "Same clock simultaneously", "Output of previous FF", "External reset"], "correct": "Same clock simultaneously", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 61, "question": "De Morgan's theorem states (A+B)' = ?", "options": ["A'+B'", "A'B'", "AB", "A+B"], "correct": "A'B'", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 62, "question": "De Morgan's theorem states (A.B)' = ?", "options": ["A'.B'", "A+B", "A'.B", "A'+B'"], "correct": "A'+B'", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 63, "question": "Binary equivalent of decimal 10 is?", "options": ["1010", "1001", "1100", "0110"], "correct": "1010", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 64, "question": "K-map is used for?", "options": ["Circuit simulation", "Boolean function minimization", "Memory allocation", "Signal amplification"], "correct": "Boolean function minimization", "subject": "Digital Electronics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 65, "question": "A 2-to-4 binary decoder has how many output lines?", "options": ["2", "3", "4", "8"], "correct": "4", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 66, "question": "JK flip-flop can be converted to D flip-flop by?", "options": ["Connecting J=K", "Connecting K=J'", "Connecting J=1", "Connecting K=0"], "correct": "Connecting K=J'", "subject": "Digital Electronics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+
+  { "id": 67, "question": "Union of sets A and B contains?", "options": ["Only elements in A", "Only elements in B", "Elements in A or B or both", "Only common elements"], "correct": "Elements in A or B or both", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 68, "question": "Intersection of sets A and B contains?", "options": ["All elements of A", "All elements of B", "Only elements common to both", "Elements not in A"], "correct": "Only elements common to both", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 69, "question": "A recursively defined function is one that?", "options": ["Has no parameters", "Is defined in terms of itself", "Returns multiple values", "Uses loops only"], "correct": "Is defined in terms of itself", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 70, "question": "How many subsets does a set with 3 elements have?", "options": ["3", "6", "8", "9"], "correct": "8", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 71, "question": "A group is called abelian if?", "options": ["It has infinite elements", "Its operation is commutative", "It has exactly one identity", "It is cyclic"], "correct": "Its operation is commutative", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 72, "question": "Every cyclic group is?", "options": ["Non-abelian", "Abelian", "Infinite", "Empty"], "correct": "Abelian", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 73, "question": "P ↔ Q is logically equivalent to?", "options": ["P→Q only", "(P→Q) ∧ (Q→P)", "P ∧ Q", "P ∨ Q"], "correct": "(P→Q) ∧ (Q→P)", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 74, "question": "P → Q is logically equivalent to?", "options": ["¬P ∨ Q", "P ∨ Q", "¬P ∧ Q", "P ∧ ¬Q"], "correct": "¬P ∨ Q", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "hard" },
+  { "id": 75, "question": "A tautology is a statement that is?", "options": ["Always false", "Always true", "Sometimes true", "Undefined"], "correct": "Always true", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 76, "question": "P ∨ ¬P is an example of?", "options": ["Contradiction", "Tautology", "Contingency", "Predicate"], "correct": "Tautology", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 77, "question": "P ∧ ¬P is an example of?", "options": ["Tautology", "Contingency", "Contradiction", "Equivalence"], "correct": "Contradiction", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 78, "question": "A relation that is reflexive, symmetric and transitive is called?", "options": ["Partial order", "Equivalence relation", "Total order", "Function"], "correct": "Equivalence relation", "subject": "Discrete Mathematics", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 79, "question": "A Hasse diagram is used to represent?", "options": ["Graphs", "Partial orders", "Functions", "Sets"], "correct": "Partial orders", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 80, "question": "A lattice is a partially ordered set in which every two elements have?", "options": ["No common element", "A least upper and greatest lower bound", "Same value", "Infinite relations"], "correct": "A least upper and greatest lower bound", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 81, "question": "How many edges does complete graph K4 have?", "options": ["4", "6", "8", "12"], "correct": "6", "subject": "Discrete Mathematics", "year": 2025, "frequency": 2, "difficulty": "hard" },
+  { "id": 82, "question": "A tree with n vertices has how many edges?", "options": ["n", "n+1", "n-1", "2n"], "correct": "n-1", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 83, "question": "In how many ways can 3 books be arranged on a shelf?", "options": ["3", "6", "9", "12"], "correct": "6", "subject": "Discrete Mathematics", "year": 2025, "frequency": 2, "difficulty": "easy" },
+  { "id": 84, "question": "The value of 0! is?", "options": ["0", "1", "Undefined", "Infinity"], "correct": "1", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 85, "question": "A semi-group is a set with a binary operation that is?", "options": ["Commutative only", "Associative only", "Both associative and commutative", "Distributive"], "correct": "Associative only", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 86, "question": "Contrapositive of P → Q is?", "options": ["Q → P", "¬P → ¬Q", "¬Q → ¬P", "P ∧ Q"], "correct": "¬Q → ¬P", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 87, "question": "Converse of P → Q is?", "options": ["¬Q → ¬P", "Q → P", "¬P → ¬Q", "P ∧ ¬Q"], "correct": "Q → P", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 88, "question": "A poset (partially ordered set) requires the relation to be?", "options": ["Reflexive only", "Reflexive, antisymmetric and transitive", "Symmetric and transitive", "Commutative"], "correct": "Reflexive, antisymmetric and transitive", "subject": "Discrete Mathematics", "year": 2025, "frequency": 3, "difficulty": "hard" },
+  { "id": 89, "question": "Every chain is a?", "options": ["Graph", "Lattice", "Group", "Function"], "correct": "Lattice", "subject": "Discrete Mathematics", "year": 2025, "frequency": 2, "difficulty": "hard" },
+
+  { "id": 90, "question": "Which of the following best defines intrapersonal communication?", "options": ["Communication between two people", "Communication within oneself", "Group communication", "Mass communication"], "correct": "Communication within oneself", "subject": "Professional Communication", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 91, "question": "Semantic noise in communication refers to?", "options": ["Loud background sound", "Misunderstanding due to word meaning", "Technical signal loss", "Physical barriers"], "correct": "Misunderstanding due to word meaning", "subject": "Professional Communication", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 92, "question": "A functional resume focuses on?", "options": ["Work history in order", "Skills and abilities", "Educational background only", "References"], "correct": "Skills and abilities", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 93, "question": "A chronological resume lists experience in?", "options": ["Alphabetical order", "Order of importance", "Reverse chronological order", "Random order"], "correct": "Reverse chronological order", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 94, "question": "Intonation in speech refers to?", "options": ["Speed of speaking", "Rise and fall of voice pitch", "Volume of voice", "Clarity of words"], "correct": "Rise and fall of voice pitch", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 95, "question": "Which discipline is called the Mother of Sciences by A.J. Bahm?", "options": ["Physics", "Chemistry", "Philosophy", "Biology"], "correct": "Philosophy", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 96, "question": "Unity in a paragraph means?", "options": ["Multiple topics covered", "All sentences relate to one main idea", "Long sentences used", "Passive voice throughout"], "correct": "All sentences relate to one main idea", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 97, "question": "Coherence in writing means?", "options": ["Using difficult words", "Logical flow and connection between ideas", "Short paragraphs only", "Avoiding punctuation"], "correct": "Logical flow and connection between ideas", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 98, "question": "A claim letter is written to?", "options": ["Apply for a job", "Request compensation for a defective product", "Introduce a company", "Invite someone to an event"], "correct": "Request compensation for a defective product", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 99, "question": "Technical communication is characterized by?", "options": ["Emotional language", "Conciseness and objectivity", "Lengthy descriptions", "Informal tone"], "correct": "Conciseness and objectivity", "subject": "Professional Communication", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 100, "question": "Which is a barrier to effective communication?", "options": ["Clear language", "Active listening", "Semantic noise", "Proper feedback"], "correct": "Semantic noise", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 101, "question": "The correct homophone to use — 'The ___ for the conference was announced': ?", "options": ["counsel", "council", "conceal", "consul"], "correct": "council", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "medium" },
+  { "id": 102, "question": "Antonym of 'Generous' is?", "options": ["Kind", "Giving", "Stingy", "Wealthy"], "correct": "Stingy", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "easy" },
+  { "id": 103, "question": "Synonym of 'Quick' is?", "options": ["Slow", "Fast", "Quiet", "Bold"], "correct": "Fast", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "easy" },
+  { "id": 104, "question": "What is negotiation?", "options": ["Writing a formal letter", "A process of reaching a mutual agreement", "Delivering a speech", "Reading a report"], "correct": "A process of reaching a mutual agreement", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 105, "question": "Which is the most crucial stage in negotiation?", "options": ["Closing", "Preparation", "Discussion", "Signing"], "correct": "Preparation", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 106, "question": "How many main modes of delivery are there in public speaking?", "options": ["2", "3", "4", "5"], "correct": "4", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "medium" },
+  { "id": 107, "question": "Interpersonal communication involves?", "options": ["One person only", "Two or more people", "Mass audiences", "Written medium only"], "correct": "Two or more people", "subject": "Professional Communication", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 108, "question": "The word formed from 'arrive' is?", "options": ["Arrivel", "Arrival", "Arrivance", "Arriving"], "correct": "Arrival", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "easy" },
+  { "id": 109, "question": "The word formed from 'efficient' is?", "options": ["Efficienty", "Efficiency", "Efficientness", "Efficience"], "correct": "Efficiency", "subject": "Professional Communication", "year": 2025, "frequency": 2, "difficulty": "easy" },
+
+  { "id": 110, "question": "What is an Information System (IS)?", "options": ["Only a software program", "A set of components that collect, process and distribute information", "A type of database", "A hardware device"], "correct": "A set of components that collect, process and distribute information", "subject": "Information Systems", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 111, "question": "What is the difference between data and information?", "options": ["They are the same", "Data is raw facts; information is processed data", "Information is raw; data is processed", "Data is always numerical"], "correct": "Data is raw facts; information is processed data", "subject": "Information Systems", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 112, "question": "MIS stands for?", "options": ["Management Information System", "Manual Input System", "Master Index System", "Managed Internet Service"], "correct": "Management Information System", "subject": "Information Systems", "year": 2025, "frequency": 5, "difficulty": "easy" },
+  { "id": 113, "question": "The main objective of MIS is to?", "options": ["Store large files", "Support management decision-making", "Design hardware", "Provide internet access"], "correct": "Support management decision-making", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 114, "question": "Organizational planning involves?", "options": ["Only hiring employees", "Setting goals and deciding how to achieve them", "Writing code", "Managing servers"], "correct": "Setting goals and deciding how to achieve them", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 115, "question": "What is the key difference between Intranet and Extranet?", "options": ["Intranet is public; Extranet is private", "Intranet is for internal use; Extranet extends to authorized outsiders", "Both are the same", "Extranet is only for emails"], "correct": "Intranet is for internal use; Extranet extends to authorized outsiders", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 116, "question": "E-commerce stands for?", "options": ["Electronic Communication", "Electronic Commerce", "External Commerce", "Email Commerce"], "correct": "Electronic Commerce", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 117, "question": "Global IT Management refers to?", "options": ["Local IT operations only", "Managing IT resources and operations across countries", "IT training programs", "Software testing globally"], "correct": "Managing IT resources and operations across countries", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 118, "question": "Which model describes MIS as input → process → output?", "options": ["Waterfall model", "IPO model", "Agile model", "ER model"], "correct": "IPO model", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 119, "question": "DSS stands for?", "options": ["Data Storage System", "Decision Support System", "Digital Signal System", "Database Search System"], "correct": "Decision Support System", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 120, "question": "DSS is primarily used to help?", "options": ["Programmers write code", "Managers make decisions", "HR hire employees", "Servers store data"], "correct": "Managers make decisions", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 121, "question": "CRM stands for?", "options": ["Customer Relationship Management", "Central Resource Module", "Company Revenue Management", "Client Request Module"], "correct": "Customer Relationship Management", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 122, "question": "CRM helps organizations to?", "options": ["Manage server loads", "Manage and improve customer relationships", "Write software", "Train employees"], "correct": "Manage and improve customer relationships", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" },
+  { "id": 123, "question": "Which of the following is a key component of an Information System?", "options": ["Only hardware", "Only software", "Hardware, software, data, people and processes", "Only networks"], "correct": "Hardware, software, data, people and processes", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "medium" },
+  { "id": 124, "question": "E-commerce transformed business by?", "options": ["Removing all employees", "Enabling buying and selling over the internet", "Replacing physical money", "Stopping traditional trade"], "correct": "Enabling buying and selling over the internet", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 125, "question": "Enterprise solutions are important because they?", "options": ["Are cheap for small shops", "Integrate business processes across large organizations", "Replace human employees", "Only manage finances"], "correct": "Integrate business processes across large organizations", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 126, "question": "SCM stands for?", "options": ["Software Control Management", "Supply Chain Management", "System Configuration Module", "Service Contract Management"], "correct": "Supply Chain Management", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "easy" },
+  { "id": 127, "question": "Which is a security threat in IT management?", "options": ["Strong passwords", "Hacking and data breaches", "Regular software updates", "Encrypted communication"], "correct": "Hacking and data breaches", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 128, "question": "The control process in an organization involves?", "options": ["Only hiring staff", "Monitoring performance and taking corrective action", "Writing reports only", "Setting salaries"], "correct": "Monitoring performance and taking corrective action", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 129, "question": "Planning and control in an organization are?", "options": ["Completely unrelated", "Interrelated — planning sets goals, control monitors them", "The same process", "Only done by IT teams"], "correct": "Interrelated — planning sets goals, control monitors them", "subject": "Information Systems", "year": 2025, "frequency": 3, "difficulty": "medium" },
+  { "id": 130, "question": "Information Systems support business operations by?", "options": ["Replacing managers", "Providing timely and accurate information for decisions", "Eliminating all manual work", "Only storing historical data"], "correct": "Providing timely and accurate information for decisions", "subject": "Information Systems", "year": 2025, "frequency": 4, "difficulty": "easy" }
 ]
