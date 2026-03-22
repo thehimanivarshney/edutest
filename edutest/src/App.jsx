@@ -3,16 +3,17 @@ import allQuestions from "./data/questions.json";
 
 const TIMER_SECONDS = 30;
 const subjects = ["All Subjects", ...new Set(allQuestions.map(q => q.subject))];
+const sorted = [...allQuestions].sort((a, b) => b.frequency - a.frequency);
 
 export default function App() {
-  const [screen, setScreen]               = useState("home");
+  const [screen, setScreen]                   = useState("home");
   const [selectedSubject, setSelectedSubject] = useState("All Subjects");
-  const [questions, setQuestions]         = useState([]);
-  const [current, setCurrent]             = useState(0);
-  const [selected, setSelected]           = useState(null);
-  const [score, setScore]                 = useState(0);
-  const [answers, setAnswers]             = useState([]);
-  const [timeLeft, setTimeLeft]           = useState(TIMER_SECONDS);
+  const [questions, setQuestions]             = useState([]);
+  const [current, setCurrent]                 = useState(0);
+  const [selected, setSelected]               = useState(null);
+  const [score, setScore]                     = useState(0);
+  const [answers, setAnswers]                 = useState([]);
+  const [timeLeft, setTimeLeft]               = useState(TIMER_SECONDS);
 
   useEffect(() => {
     if (screen !== "test") return;
@@ -66,6 +67,7 @@ export default function App() {
         <div style={s.badge}>AKTU BCA · PYQ Bank</div>
         <h1 style={s.hero}>EduTest</h1>
         <p style={s.sub}>Practice smarter. Track weak spots. Ace the exam.</p>
+
         <p style={s.filterLabel}>Select Subject</p>
         <div style={s.subjectGrid}>
           {subjects.map(sub => (
@@ -79,6 +81,7 @@ export default function App() {
             </button>
           ))}
         </div>
+
         <div style={s.statsRow}>
           <div style={s.stat}>
             <span style={s.statNum}>
@@ -97,10 +100,78 @@ export default function App() {
             <span style={s.statLabel}>Per Correct</span>
           </div>
         </div>
+
         <button style={s.btn} onClick={startTest}>Start Test →</button>
+
+        <button style={s.ghostBtn} onClick={() => setScreen("pyq")}>
+          🔥 Most Repeated Questions
+        </button>
       </div>
     </div>
   );
+
+  // ── PYQ PAGE ──
+  if (screen === "pyq") {
+    const freqColor = (f) => f >= 5 ? "#f87171" : f >= 3 ? "#facc15" : "#4ade80";
+    const freqLabel = (f) => f >= 5 ? "🔴 Very High" : f >= 3 ? "🟡 High" : "🟢 Medium";
+
+    return (
+      <div style={s.page}>
+        <div style={{ ...s.card, maxWidth: "640px" }}>
+          <button style={s.backBtn} onClick={() => setScreen("home")}>← Back</button>
+          <h1 style={{ ...s.hero, fontSize: "2rem", marginBottom: "0.3rem" }}>🔥 Most Repeated</h1>
+          <p style={{ ...s.sub, marginBottom: "2rem" }}>Sorted by frequency across AKTU PYQs</p>
+
+          {sorted.map((q, i) => (
+            <div key={q.id} style={s.pyqCard}>
+              {/* Top row */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.6rem" }}>
+                <span style={s.pyqSubject}>{q.subject}</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span style={{ color: "#8888aa", fontSize: "0.78rem" }}>Year {q.year}</span>
+                  <span style={{
+                    background: freqColor(q.frequency) + "22",
+                    color: freqColor(q.frequency),
+                    border: `1px solid ${freqColor(q.frequency)}44`,
+                    borderRadius: "20px",
+                    padding: "0.2rem 0.7rem",
+                    fontSize: "0.78rem",
+                    fontWeight: "700"
+                  }}>
+                    {q.frequency}x · {freqLabel(q.frequency)}
+                  </span>
+                </div>
+              </div>
+
+              {/* Frequency bar */}
+              <div style={{ background: "#1e1e3a", borderRadius: "4px", height: "4px", marginBottom: "0.8rem" }}>
+                <div style={{
+                  width: `${Math.min(q.frequency * 15, 100)}%`,
+                  height: "100%",
+                  background: freqColor(q.frequency),
+                  borderRadius: "4px"
+                }} />
+              </div>
+
+              {/* Question */}
+              <p style={{ color: "#e2e8f0", fontSize: "0.97rem", margin: "0 0 0.5rem", lineHeight: "1.5" }}>
+                {i + 1}. {q.question}
+              </p>
+
+              {/* Answer */}
+              <p style={{ color: "#4ade80", fontSize: "0.88rem", margin: 0 }}>
+                ✓ {q.correct}
+              </p>
+            </div>
+          ))}
+
+          <button style={{ ...s.btn, marginTop: "1.5rem" }} onClick={startTest}>
+            Start Test →
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   // ── TEST ──
   if (screen === "test") {
@@ -144,7 +215,6 @@ export default function App() {
   // ── RESULT ──
   if (screen === "result") {
     const pct = Math.round((score / questions.length) * 100);
-
     const subjectMap = {};
     answers.forEach((a) => {
       const q = questions.find(q => q.question === a.question);
@@ -168,9 +238,8 @@ export default function App() {
             Subject: {selectedSubject}
           </p>
 
-          {/* Subject-wise Chart */}
           <div style={{ width: "100%", marginBottom: "2rem" }}>
-            <p style={s.filterLabel}>📊 Subject-wise Performance</p>
+            <p style={{ ...s.filterLabel, alignSelf: "flex-start" }}>📊 Subject-wise Performance</p>
             {subjectStats.map(([sub, stat]) => {
               const subPct = Math.round((stat.correct / stat.total) * 100);
               const barColor = subPct >= 70 ? "#4ade80" : subPct >= 40 ? "#facc15" : "#f87171";
@@ -197,8 +266,7 @@ export default function App() {
             })}
           </div>
 
-          {/* Answer Review */}
-          <p style={s.filterLabel}>📝 Answer Review</p>
+          <p style={{ ...s.filterLabel, alignSelf: "flex-start" }}>📝 Answer Review</p>
           <div style={{ width: "100%" }}>
             {answers.map((a, i) => (
               <div key={i} style={{
@@ -220,9 +288,9 @@ export default function App() {
 
           <div style={{ display: "flex", gap: "1rem", marginTop: "1.2rem", flexWrap: "wrap", justifyContent: "center" }}>
             <button style={{ ...s.btn, background: "#1e1e3a", border: "1px solid #6c63ff" }} onClick={restart}>
-              ← Change Subject
+              ← Home
             </button>
-            <button style={s.btn} onClick={startTest}>🔄 Retry Same</button>
+            <button style={s.btn} onClick={startTest}>🔄 Retry</button>
           </div>
         </div>
       </div>
@@ -252,7 +320,7 @@ const s = {
   },
   hero: { fontSize: "2.8rem", fontWeight: "800", margin: "0 0 0.5rem", letterSpacing: "-1px" },
   sub: { color: "#8888aa", fontSize: "1rem", textAlign: "center", marginBottom: "1.5rem" },
-  filterLabel: { color: "#8888aa", fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.8rem", alignSelf: "flex-start" },
+  filterLabel: { color: "#8888aa", fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.8rem" },
   subjectGrid: { display: "flex", flexWrap: "wrap", gap: "0.6rem", justifyContent: "center", marginBottom: "1.8rem" },
   subjectBtn: {
     padding: "0.55rem 1.1rem", borderRadius: "30px",
@@ -269,6 +337,17 @@ const s = {
     padding: "0.85rem 2.5rem", borderRadius: "30px",
     fontSize: "1rem", fontWeight: "600", cursor: "pointer"
   },
+  ghostBtn: {
+    background: "transparent", color: "#6c63ff",
+    border: "1px solid #6c63ff33", padding: "0.7rem 2rem",
+    borderRadius: "30px", fontSize: "0.95rem",
+    fontWeight: "500", cursor: "pointer", marginTop: "1rem"
+  },
+  backBtn: {
+    alignSelf: "flex-start", background: "transparent",
+    border: "none", color: "#8888aa", cursor: "pointer",
+    fontSize: "0.9rem", marginBottom: "1rem", padding: 0
+  },
   progressBg: { position: "fixed", top: 0, left: 0, right: 0, height: "4px", background: "#1e1e3a" },
   progressFill: { height: "100%", background: "#6c63ff", transition: "width 0.4s ease" },
   row: { display: "flex", justifyContent: "space-between", width: "100%", marginBottom: "0.5rem" },
@@ -283,4 +362,10 @@ const s = {
   },
   scoreBig: { fontSize: "5rem", fontWeight: "800", color: "#6c63ff", lineHeight: 1 },
   scoreOf: { fontSize: "2.5rem", color: "#4444aa" },
+  pyqCard: {
+    width: "100%", background: "#0d0d24",
+    border: "1px solid #2e2e4e", borderRadius: "14px",
+    padding: "1rem 1.2rem", marginBottom: "0.9rem"
+  },
+  pyqSubject: { color: "#6c63ff", fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.07em" },
 };
