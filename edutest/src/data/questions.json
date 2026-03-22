@@ -6,7 +6,8 @@
     "correct": "Stack",
     "subject": "Data Structures",
     "year": 2023,
-    "frequency": 5
+    "frequency": 5,
+    "difficulty": "easy"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "correct": "Queue",
     "subject": "Data Structures",
     "year": 2022,
-    "frequency": 4
+    "frequency": 4,
+    "difficulty": "easy"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "correct": "O(log n)",
     "subject": "Data Structures",
     "year": 2023,
-    "frequency": 3
+    "frequency": 3,
+    "difficulty": "medium"
   },
   {
     "id": 4,
@@ -33,69 +36,107 @@
     "correct": "Preorder",
     "subject": "Data Structures",
     "year": 2022,
-    "frequency": 2
+    "frequency": 2,
+    "difficulty": "medium"
   },
   {
     "id": 5,
+    "question": "What is the worst case time complexity of quicksort?",
+    "options": ["O(n log n)", "O(n)", "O(n²)", "O(log n)"],
+    "correct": "O(n²)",
+    "subject": "Data Structures",
+    "year": 2023,
+    "frequency": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
     "question": "What does CPU stand for?",
     "options": ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Core Processing Unit"],
     "correct": "Central Processing Unit",
     "subject": "Computer Fundamentals",
     "year": 2022,
-    "frequency": 3
+    "frequency": 3,
+    "difficulty": "easy"
   },
   {
-    "id": 6,
+    "id": 7,
     "question": "Which memory is fastest?",
     "options": ["RAM", "Hard Disk", "Cache", "ROM"],
     "correct": "Cache",
     "subject": "Computer Fundamentals",
     "year": 2023,
-    "frequency": 4
+    "frequency": 4,
+    "difficulty": "easy"
   },
   {
-    "id": 7,
+    "id": 8,
     "question": "Full form of ALU?",
     "options": ["Arithmetic Logic Unit", "Array Logic Unit", "Arithmetic Linear Unit", "None"],
     "correct": "Arithmetic Logic Unit",
     "subject": "Computer Fundamentals",
     "year": 2021,
-    "frequency": 2
+    "frequency": 2,
+    "difficulty": "medium"
   },
   {
-    "id": 8,
+    "id": 9,
+    "question": "Which of the following is NOT a type of operating system?",
+    "options": ["Batch", "Distributed", "Compiled", "Real-time"],
+    "correct": "Compiled",
+    "subject": "Computer Fundamentals",
+    "year": 2022,
+    "frequency": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
     "question": "Which gate outputs 1 only when all inputs are 1?",
     "options": ["OR", "NOT", "AND", "XOR"],
     "correct": "AND",
     "subject": "Digital Electronics",
     "year": 2023,
-    "frequency": 4
+    "frequency": 4,
+    "difficulty": "easy"
   },
   {
-    "id": 9,
+    "id": 11,
     "question": "Which gate outputs 1 when any input is 1?",
     "options": ["AND", "NOT", "NAND", "OR"],
     "correct": "OR",
     "subject": "Digital Electronics",
     "year": 2022,
-    "frequency": 3
+    "frequency": 3,
+    "difficulty": "easy"
   },
   {
-    "id": 10,
+    "id": 12,
     "question": "What is the complement of 1 in binary?",
     "options": ["1", "0", "2", "None"],
     "correct": "0",
     "subject": "Digital Electronics",
     "year": 2021,
-    "frequency": 3
+    "frequency": 3,
+    "difficulty": "easy"
   },
   {
-    "id": 11,
+    "id": 13,
     "question": "XOR gate outputs 1 when inputs are?",
     "options": ["Same", "Different", "Both 0", "Both 1"],
     "correct": "Different",
     "subject": "Digital Electronics",
     "year": 2023,
-    "frequency": 2
+    "frequency": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "question": "Simplify using Boolean algebra: A + A'B",
+    "options": ["A", "B", "A + B", "A'"],
+    "correct": "A + B",
+    "subject": "Digital Electronics",
+    "year": 2022,
+    "frequency": 3,
+    "difficulty": "hard"
   }
 ]
